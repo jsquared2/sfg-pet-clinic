@@ -1,12 +1,13 @@
 package guru.springframework.sfgpetclinic.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Owner extends Person {
 
 	private static final long serialVersionUID = -5242598582332322150L;
 
-	private Set<Pet> pets;
+	private Set<Pet> pets = new HashSet<>();
 
 	private String address;
 	private String city;
